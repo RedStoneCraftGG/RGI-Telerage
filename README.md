@@ -23,4 +23,29 @@ Saat menjalankan aplikasinya, terdapat input text yang harus diisi seperti ID ch
 
 setelah memasukan informasi yang dibutuhkan, maka aplikasi akan berjalan dan mulai membanjiri pesan bot telegram si penipu. Jalankan sebanyak-banyaknya untuk membanjiri lebih banyak lagi!
 
+Selain mengisi dengan user input, Aplikasi ini bisa dijalankan dengan 1 command line saja. Contohnya seperti dibawah ini:
+
+```
+py app.py -id 1234567890 -t 1234567890:abcdefghijklmnopqrstuvwxyz -m "Mampus Lu" -i https://example.com/image.png -d 1
+```
+Atau
+```
+python3 app.py -id 1234567890 -t 1234567890:abcdefghijklmnopqrstuvwxyz -m "Mampus Lu" -i https://example.com/image.png -d 1
+```
+Dengan keterangan:
+
+-id --chatid (Chat ID Telegram)
+
+-t --token (Token bot Telegram)
+
+-m --message (Pesan)
+
+-i --image (Gambar url. Kosongkan untuk menupload gambar bawaan)
+
+-d --delay (Jeda mengirim pesan. Kosongkan untuk mengatur secara default: 10 detik)
+
+-v --verbose (tampilkan verbose dan info)
+
+
+
 **Selalu Waspada dan Gunakan Aplikasi Ini Dengan Penuh Tanggung Jawab!**
