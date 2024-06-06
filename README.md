@@ -16,7 +16,7 @@ python -m pip install requests
 pip install requests
 ```
 
-#Cara menggunakan aplikasi
+# Cara menggunakan aplikasi
 Saat menjalankan aplikasinya, terdapat input text yang harus diisi seperti ID chat, Token, Pesan, dan lainnya seperti gambar dibawah ini
 
 ![image](https://github.com/RedStoneCraftGG/RGI-Scammer-Revenge/assets/66346080/535ff7ec-99c7-4590-97cc-999d66a57f67)
