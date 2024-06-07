@@ -4,7 +4,7 @@ Alat untuk membanjiri pesan bot telegram penipu dari apk undangan atau website t
 # Instalasi
 Download file yang ingin anda gunakan atau clone/download repository ini. Jangan lupa untuk menginstall Python3 jika belum punya
 
-Pastikan anda menginstall Requests di python dengan cara menuliskan kode dibawah ini:
+Pastikan anda menginstall package yang diperlukan dengan cara menuliskan kode dibawah ini:
 
 **Untuk Windows:**
 ```
