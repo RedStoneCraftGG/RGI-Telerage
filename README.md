@@ -8,8 +8,8 @@ Pastikan anda menginstall Requests di python dengan cara menuliskan kode dibawah
 
 **Untuk Windows:**
 ```
-python -m pip install requests
-python -m pip install pillow
+py -m pip install requests
+py -m pip install pillow
 ```
 
 **Untuk Linux:**
