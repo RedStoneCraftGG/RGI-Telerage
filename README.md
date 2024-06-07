@@ -1,4 +1,4 @@
-# RGI-Scammer-Revenge
+# RGI-Telerage
 Alat untuk membanjiri pesan bot telegram penipu dari apk undangan atau website tarif bank
 
 # Instalasi
