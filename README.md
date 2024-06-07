@@ -42,12 +42,16 @@ Dengan keterangan:
 
 -m --message (Pesan)
 
--i --image (Gambar url. Kosongkan untuk menupload gambar bawaan)
+-i --image (Gambar url. Kosongkan untuk mengupload gambar bawaan)
 
 -d --delay (Jeda mengirim pesan. Kosongkan untuk mengatur secara default: 10 detik)
 
 -v --verbose (tampilkan verbose dan info)
 
+# Menggunakan GUI
+Versi GUI memiliki interface yang mudah dan bisa melakukan secara live. Perlu diingat, error terkadang sering terjadi
+
+![image](https://github.com/RedStoneCraftGG/RGI-Telerage/assets/66346080/eeb54a5b-a1cf-4fcb-bd63-85fa396a8280)
 
 
 **Selalu Waspada dan Gunakan Aplikasi Ini Dengan Penuh Tanggung Jawab!**
