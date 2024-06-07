@@ -9,11 +9,13 @@ Pastikan anda menginstall Requests di python dengan cara menuliskan kode dibawah
 **Untuk Windows:**
 ```
 python -m pip install requests
+python -m pip install pillow
 ```
 
 **Untuk Linux:**
 ```
 pip install requests
+pip install pillow
 ```
 
 # Cara menggunakan aplikasi
