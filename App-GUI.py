@@ -46,7 +46,7 @@ def start_program():
     print("Loop dimulai!")
     while loop_running.get():
         cooldown_value, image_value, message_value, token_value, id_value = get_value()
-        url = f"https://api.telegram.org/bot{token_value}/sendMessage?chat_id={id_value}&text={message_value}"
+        url = f"https://api.telegram.org/bot{token_value}/sendMessage?parse_mode=markdown&chat_id={id_value}&text={message_value}"
 
         if var1.get() == 1:
             path = url_image.get()

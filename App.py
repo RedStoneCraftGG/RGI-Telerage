@@ -59,7 +59,7 @@ try:
 
 	print("\n")
 
-	url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}"
+	url = f"https://api.telegram.org/bot{token}/sendMessage?parse_mode=markdown&chat_id={chat_id}&text={message}"
 	urlimg = f"https://api.telegram.org/bot{token}/sendPhoto?chat_id={chat_id}&photo={image_url}"
 
 	def send(verbose=False):
@@ -74,9 +74,17 @@ try:
 			bot_name = response1.json()["result"]["from"]["first_name"]
 			bot_nickname = response1.json()["result"]["from"]["username"]
 			bot_id = response1.json()["result"]["from"]["id"]
-			receiver_name = response1.json()["result"]["chat"]["first_name"]
 			chat_id = response1.json()["result"]["chat"]["id"]
 			chat_type = response1.json()["result"]["chat"]["type"]
+
+			receiver_name = "Unknown"
+			if "first_name" in response1.json()["result"]["chat"]:
+				receiver_name = response1.json()["result"]["chat"]["first_name"]
+
+			chat_title = "Unknown"
+			if "title" in response1.json()["result"]["chat"]:
+				chat_title = response1.json()["result"]["chat"]["title"]
+
 		else:
 			message_id1 = "Error"
 
@@ -97,7 +105,7 @@ try:
 			#print("[",message_id1,"] ","Pesan terkirim!")
 			message1 = f"[{message_id1}] Pesan terkirim!"
 			if args.verbose == True:
-				message1 = f"[{message_id1}] Pesan terkirim!\nMessage: '{message_text}'\nBot Name: '{bot_name}'\nBot Nickname: '{bot_nickname}'\nBot ID: {bot_id}\nReceiver: '{receiver_name}'\nChat ID: {chat_id}\nChat Type: {chat_type}\n"
+				message1 = f"[{message_id1}] Pesan terkirim!\nMessage: '{message_text}'\nBot Name: '{bot_name}'\nBot Nickname: '{bot_nickname}'\nBot ID: {bot_id}\nReceiver: '{receiver_name}'\nChat Title: '{chat_title}'\nChat ID: {chat_id}\nChat Type: {chat_type}\n"
 		elif response1.status_code == 429:
 			#print("[",message_id1,"] ","Aowaowowaowak API nya down")
 			message1 = f"[{message_id1}] Aowaowowaowak API nya down"
